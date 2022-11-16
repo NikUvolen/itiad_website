@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Open+Sans:wght@700&display=swap);
+
+@import "_resset";
+
+$background_color:#141414;
+$text_color: #fff;
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $background_color;
+    color: $text_color;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: none;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;       /* закругления плашки */
+    background: linear-gradient(172deg, #6c2a94,#c52390);
+// border: 3px solid ;  /* padding вокруг плашки */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.shell {
+    overflow-x: hidden;
+}
+
+@import "_header";
+@import "_main";
+// @import "_footer";
+
+@import "_adaptive";
