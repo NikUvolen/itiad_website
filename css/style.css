@@ -420,6 +420,10 @@ body::-webkit-scrollbar-thumb {
   .third_block_list {
     padding-left: 100px;
   }
+  .contact_title {
+    position: relative;
+    right: 0;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -465,37 +469,6 @@ body::-webkit-scrollbar-thumb {
   .header__nav {
     display: none;
   }
-  .header__nav__btn {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    z-index: 1;
-    width: 65px;
-    height: 40px;
-    border: red solid 3px;
-    border-radius: 3px;
-    position: relative;
-  }
-  .header__nav__btn__line {
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .header__nav__btn__line, .header__nav__btn__line::after, .header__nav__btn__line::before {
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: red;
-  }
-  .header__nav__btn__line::after {
-    content: "";
-    top: -8px;
-  }
-  .header__nav__btn__line::before {
-    content: "";
-    top: 8px;
-  }
   .pw_text {
     font-size: 40px;
   }
@@ -534,5 +507,29 @@ body::-webkit-scrollbar-thumb {
   .contact_area_logo {
     width: 380px;
     right: 324px;
+  }
+}
+@media (max-width: 440px) {
+  .pw_text {
+    font-size: 32px;
+  }
+  .pw_text.top {
+    left: 10px;
+  }
+  .pw_text.bottom {
+    left: 50px;
+    bottom: 175px;
+  }
+  .contact_title {
+    font-size: 28px;
+  }
+  .contact_area_tel {
+    margin-left: 0;
+  }
+  .contact_area_email {
+    margin-left: 0;
+  }
+  #first_square {
+    top: 195px;
   }
 }
